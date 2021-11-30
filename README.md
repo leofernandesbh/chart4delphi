@@ -11,3 +11,18 @@ Graphics are fully customizable. The values to be displayed must be passed in JS
 ##
 
 ### Tip: For database integration I recommend using the "DataSetSerialize" module which makes it much easier to convert queries to JSON format: https://github.com/viniciussanchez/dataset-serialize
+
+##
+
+### Graph Examples
+
+<br/>
+<div align="center">
+<img alt="Pie-Chart" height="740" src="https://github.com/leofernandesbh/chart4delphi/blob/068cd28d3797a42433aecd099dbb7dea626a62fb/sample/prints/Pie.png">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img alt="Donnut-Chart" height="740" src="https://github.com/leofernandesbh/chart4delphi/blob/068cd28d3797a42433aecd099dbb7dea626a62fb/sample/prints/Donnut.png">
+<br/><br/><br/>
+<img alt="Bar-Chart" height="740" src="https://github.com/leofernandesbh/chart4delphi/blob/068cd28d3797a42433aecd099dbb7dea626a62fb/sample/prints/Bars.png">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img alt="Line-Chart" height="740" src="https://github.com/leofernandesbh/chart4delphi/blob/068cd28d3797a42433aecd099dbb7dea626a62fb/sample/prints/Lines.png">
+</div>
