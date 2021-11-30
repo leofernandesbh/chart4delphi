@@ -1,0 +1,381 @@
+object FrmGraph: TFrmGraph
+  Left = 0
+  Top = 0
+  Caption = 'Chart4Delphi by L'#233'o Fernandes'
+  ClientHeight = 708
+  ClientWidth = 430
+  Fill.Kind = Solid
+  Position = DesktopCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object btnShowGraph: TButton
+    Cursor = crHandPoint
+    StyledSettings = [Family, Size, FontColor]
+    Position.X = 19.000000000000000000
+    Position.Y = 323.000000000000000000
+    Size.Width = 391.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    Text = 'Show Gaph'
+    TextSettings.Font.StyleExt = {00070000000000000004000000}
+    OnClick = btnShowGraphClick
+  end
+  object lyChart: TLayout
+    Position.X = 65.000000000000000000
+    Position.Y = 366.000000000000000000
+    Size.Width = 300.000000000000000000
+    Size.Height = 300.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 15
+  end
+  object Label1: TLabel
+    AutoSize = True
+    Position.X = 8.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Values - JSON Array'
+    TabOrder = 30
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Lines.Strings = (
+      
+        '[{"field":"Jan", "value":520}, {"field":"Fev", "value":400}, {"f' +
+        'ield":"Mar", "value":840}, {"field":"Abr", "value":200}, {"field' +
+        '":"Mai", "value":997}, {"field":"Jun", "value":1270}]')
+    ShowScrollBars = False
+    TextSettings.WordWrap = True
+    Position.X = 8.000000000000000000
+    Position.Y = 36.000000000000000000
+    Size.Width = 417.000000000000000000
+    Size.Height = 77.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 31
+    Viewport.Width = 413.000000000000000000
+    Viewport.Height = 73.000000000000000000
+  end
+  object cbStyle: TComboBox
+    Items.Strings = (
+      'Pizza'
+      'Donnuts'
+      'Barra'
+      'Linha')
+    ItemIndex = 0
+    Position.X = 61.000000000000000000
+    Position.Y = 128.000000000000000000
+    Size.Width = 360.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    OnChange = cbStyleChange
+  end
+  object Label2: TLabel
+    AutoSize = True
+    Position.X = 32.000000000000000000
+    Position.Y = 130.000000000000000000
+    Size.Width = 30.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Style'
+    TabOrder = 29
+  end
+  object edtDNR: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    TextSettings.HorzAlign = Center
+    Position.X = 372.000000000000000000
+    Position.Y = 164.000000000000000000
+    Enabled = False
+    Size.Width = 49.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label3: TLabel
+    AutoSize = True
+    Position.X = 247.000000000000000000
+    Position.Y = 166.000000000000000000
+    Size.Width = 122.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.WordWrap = False
+    Text = 'Donnuts Center Radius'
+    TabOrder = 19
+  end
+  object edtTO: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 3
+    Text = '0,1'
+    TextSettings.HorzAlign = Center
+    Position.X = 185.000000000000000000
+    Position.Y = 164.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label4: TLabel
+    AutoSize = True
+    Position.X = 124.000000000000000000
+    Position.Y = 166.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.WordWrap = False
+    Text = 'Text Offset'
+    TabOrder = 18
+  end
+  object swPercent: TSwitch
+    IsChecked = True
+    Position.X = 87.000000000000000000
+    Position.Y = 227.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+  end
+  object Label5: TLabel
+    AutoSize = True
+    Position.X = 10.000000000000000000
+    Position.Y = 229.000000000000000000
+    Size.Width = 72.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Trailing
+    TextSettings.WordWrap = False
+    Text = 'Show Percent'
+    TabOrder = 28
+  end
+  object swValues: TSwitch
+    IsChecked = True
+    Position.X = 246.000000000000000000
+    Position.Y = 227.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+  end
+  object Label6: TLabel
+    AutoSize = True
+    Position.X = 176.000000000000000000
+    Position.Y = 229.000000000000000000
+    Size.Width = 66.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Trailing
+    TextSettings.WordWrap = False
+    Text = 'Show Values'
+    TabOrder = 27
+  end
+  object swHint: TSwitch
+    IsChecked = True
+    Position.X = 88.000000000000000000
+    Position.Y = 256.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+  end
+  object Label7: TLabel
+    AutoSize = True
+    Position.X = 27.000000000000000000
+    Position.Y = 258.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Trailing
+    TextSettings.WordWrap = False
+    Text = 'Show Hint'
+    TabOrder = 25
+  end
+  object Label8: TLabel
+    AutoSize = True
+    Position.X = 197.000000000000000000
+    Position.Y = 258.000000000000000000
+    Size.Width = 45.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Trailing
+    TextSettings.WordWrap = False
+    Text = 'Full Hint'
+    TabOrder = 22
+  end
+  object swFullHint: TSwitch
+    IsChecked = True
+    Position.X = 247.000000000000000000
+    Position.Y = 256.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+  end
+  object Label9: TLabel
+    AutoSize = True
+    Position.X = 314.000000000000000000
+    Position.Y = 229.000000000000000000
+    Size.Width = 45.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Trailing
+    TextSettings.WordWrap = False
+    Text = 'Animate'
+    TabOrder = 26
+  end
+  object swAnimate: TSwitch
+    IsChecked = True
+    Position.X = 363.000000000000000000
+    Position.Y = 227.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+  end
+  object Label10: TLabel
+    Align = Bottom
+    AutoSize = True
+    StyledSettings = [Family]
+    Margins.Bottom = 15.000000000000000000
+    Position.Y = 674.000000000000000000
+    Size.Width = 430.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.FontColor = claCrimson
+    TextSettings.HorzAlign = Center
+    Text = 'To see all available parameters, see the source code.'
+    TabOrder = 32
+  end
+  object edtFontSize: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Text = '12'
+    TextSettings.HorzAlign = Center
+    Position.X = 61.000000000000000000
+    Position.Y = 164.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label11: TLabel
+    AutoSize = True
+    Position.X = 9.000000000000000000
+    Position.Y = 166.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.WordWrap = False
+    Text = 'Font Size'
+    TabOrder = 16
+  end
+  object Label12: TLabel
+    AutoSize = True
+    Position.X = 311.000000000000000000
+    Position.Y = 258.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Trailing
+    TextSettings.WordWrap = False
+    Text = 'Text Bold'
+    TabOrder = 21
+  end
+  object swBold: TSwitch
+    IsChecked = True
+    Position.X = 364.000000000000000000
+    Position.Y = 256.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+  end
+  object Label13: TLabel
+    AutoSize = True
+    Position.X = 6.000000000000000000
+    Position.Y = 286.000000000000000000
+    Size.Width = 76.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Trailing
+    TextSettings.WordWrap = False
+    Text = 'Show Bar Title'
+    TabOrder = 24
+  end
+  object swBarTitle: TSwitch
+    IsChecked = True
+    Position.X = 88.000000000000000000
+    Position.Y = 284.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 13
+  end
+  object Label14: TLabel
+    AutoSize = True
+    Position.X = 151.000000000000000000
+    Position.Y = 286.000000000000000000
+    Size.Width = 92.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Trailing
+    TextSettings.WordWrap = False
+    Text = 'Show Bar Legend'
+    TabOrder = 20
+  end
+  object swBarLegend: TSwitch
+    IsChecked = True
+    Position.X = 247.000000000000000000
+    Position.Y = 284.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 14
+  end
+  object edtBarTitle: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 61.000000000000000000
+    Position.Y = 194.000000000000000000
+    Enabled = False
+    Size.Width = 173.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label15: TLabel
+    AutoSize = True
+    Position.X = 13.000000000000000000
+    Position.Y = 195.000000000000000000
+    Size.Width = 43.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Trailing
+    TextSettings.WordWrap = False
+    Text = 'Bar Title'
+    TabOrder = 23
+  end
+  object Label16: TLabel
+    AutoSize = True
+    Position.X = 263.000000000000000000
+    Position.Y = 196.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.WordWrap = False
+    Text = 'Animation Duration'
+    TabOrder = 17
+  end
+  object edtDuration: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Text = '0,8'
+    TextSettings.HorzAlign = Center
+    Position.X = 372.000000000000000000
+    Position.Y = 194.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+end
