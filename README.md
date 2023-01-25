@@ -14,7 +14,7 @@ Graphics are fully customizable. The values to be displayed must be passed in JS
 
 ##
 
-### Graph Examples
+### Graph Samples
 
 <br/>
 <div align="center">
